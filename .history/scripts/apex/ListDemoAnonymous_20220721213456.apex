@@ -1,2 +1,0 @@
-ListDemo.candidateList();
-ListDemo.randomIntegerList();

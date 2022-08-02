@@ -1,1 +1,0 @@
-Cat sfCat=new Cat();

@@ -1,1 +1,0 @@
-SELECT Id, Name, MailingCity FROM Contact WHERE MailingCity='PARIS'

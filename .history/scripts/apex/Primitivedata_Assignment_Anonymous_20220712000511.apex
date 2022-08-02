@@ -1,2 +1,0 @@
-Primitivedata_Assignment PrimitivedataAssignment=new Primitivedata_Assignment();
-PrimitivedataAssignment.primitiveDataAssignmentMethod();

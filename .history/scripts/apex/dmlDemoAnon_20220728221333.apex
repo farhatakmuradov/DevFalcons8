@@ -1,1 +1,0 @@
-dmlDemo.dmlInsertDemo_stndObj();
