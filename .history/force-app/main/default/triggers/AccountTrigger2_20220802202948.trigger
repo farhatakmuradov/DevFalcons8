@@ -7,16 +7,8 @@
 **/
 
 trigger AccountTrigger2 on Account (before insert, before update, after insert, after update){
-    List<Account> newAccounts=trigger.new;
-        if(trigger.isAfter && trigger.isInsert){
-            System.debug('after trigger trigger.new: '+newAccounts);
-            System.debug('after trigger trigger.new: '+newAccounts.size());
-            for (account eachAcc : newAccounts) {
-                System.debug('Account id is '+eachacc.id+' account name is '+eachAcc.name);
-            }
-        }
    
-        /*system.debug('====Trigger START====');
+        system.debug('====Trigger START====');
     if(trigger.isInsert && trigger.isBefore){
         system.debug('Before insert trigger called.');
     }
@@ -29,7 +21,7 @@ trigger AccountTrigger2 on Account (before insert, before update, after insert, 
     if(trigger.isUpdate && trigger.isAfter){
         system.debug('After update trigger called.');
         }
-        system.debug('====Trigger END====');*/
+        system.debug('====Trigger END====');
 
 }
     

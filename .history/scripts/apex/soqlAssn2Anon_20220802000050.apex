@@ -1,0 +1,1 @@
+SoqlAssn2.avgEmp();

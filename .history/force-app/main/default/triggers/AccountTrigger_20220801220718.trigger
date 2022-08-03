@@ -2,10 +2,10 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 08-02-2022
+ * @last modified on  : 08-01-2022
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
-trigger AccountTrigger on Account (before insert, before update) {
+trigger AccountTrigger on Account (before insert, after insert) {
    if(trigger.isBefore){
     System.debug('Before INSERT trigger called');
    } 

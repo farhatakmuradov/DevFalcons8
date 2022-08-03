@@ -12,7 +12,7 @@ trigger AccountTrigger2 on Account (before insert, before update, after insert, 
             System.debug('after trigger trigger.new: '+newAccounts);
             System.debug('after trigger trigger.new: '+newAccounts.size());
             for (account eachAcc : newAccounts) {
-                System.debug('Account id is '+eachacc.id+' account name is '+eachAcc.name);
+                System.debug('Account is is '+eachacc.id)
             }
         }
    
