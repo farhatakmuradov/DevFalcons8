@@ -33,7 +33,7 @@ public class SoqlAssn2 {
         }    
     public static void accSoql() {
         List<Account> lstacc=[SELECT  LastName, Name, (select id, name FROM Contact) from Account];
-        for (Account ar : lstacc) {
+        for (contact ar : lstacc) {
             System.debug('=========================================');
             System.debug('Account Full Name is '+ar.Name+' '+ar.LastName);
             System.debug('Contact name and id is '+ar.Contact.Name+' '+ar.Contact.Id);

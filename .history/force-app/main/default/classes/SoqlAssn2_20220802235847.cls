@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 08-03-2022
+ * @last modified on  : 08-02-2022
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public class SoqlAssn2 {
@@ -23,20 +23,7 @@ public class SoqlAssn2 {
                 System.debug('Max Number of Emp are: '+eachInd.get('maxres'));
             }
         }
-    public static void contSoql() {
-        List<Contact> lstcontact=[SELECT  LastName, Name, Account.id, Account.name FROM Contact];
-        for (contact ar : lstcontact) {
-            System.debug('=========================================');
-            System.debug('Contact Full Name is '+ar.Name);
-            System.debug('Account name and id is '+ar.Account.Name+' '+ar.Account.Id);
-            }
-        }    
-    public static void accSoql() {
-        List<Account> lstacc=[SELECT  LastName, Name, (select id, name FROM Contact) from Account];
-        for (Account ar : lstacc) {
-            System.debug('=========================================');
-            System.debug('Account Full Name is '+ar.Name+' '+ar.LastName);
-            System.debug('Contact name and id is '+ar.Contact.Name+' '+ar.Contact.Id);
-            }
-        }        
+    public static void name() {
+        
+    }    
     }

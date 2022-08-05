@@ -31,12 +31,12 @@ public class SoqlAssn2 {
             System.debug('Account name and id is '+ar.Account.Name+' '+ar.Account.Id);
             }
         }    
-    public static void accSoql() {
-        List<Account> lstacc=[SELECT  LastName, Name, (select id, name FROM Contact) from Account];
-        for (Account ar : lstacc) {
+    public static void contSoql() {
+        List<Account> lstacc=[SELECT  LastName, Name, Account.id, Account.name FROM Contact];
+        for (contact ar : lstcontact) {
             System.debug('=========================================');
-            System.debug('Account Full Name is '+ar.Name+' '+ar.LastName);
-            System.debug('Contact name and id is '+ar.Contact.Name+' '+ar.Contact.Id);
+            System.debug('Contact Full Name is '+ar.Name);
+            System.debug('Account name and id is '+ar.Account.Name+' '+ar.Account.Id);
             }
         }        
     }
